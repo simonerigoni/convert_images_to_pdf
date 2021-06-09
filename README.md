@@ -6,7 +6,7 @@ Many times you have to create a PDF staring from a list of images. The idea is t
 
 ## Software and Libraries
 
-This project uses Python 3.8.5 and the following libraries:
+This project uses Python 3.9.5 and the following libraries:
 * [pyinstaller](https://www.pyinstaller.org/)
 * [PIL](https://pillow.readthedocs.io/en/stable/index.html)
 
