@@ -24,7 +24,7 @@ From any folder of your PC you can open a command promt and run `convert_images_
 ## TODO
 
 * 0 - Delete this TODO section when all the tasks are working properly
-* 1 - Would be nice to have a GUI
+* 1 - It would be nice to have a GUI
 
 ## Acknowledgements
 
