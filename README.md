@@ -10,6 +10,9 @@ This project uses Python 3.9.5 and the following libraries:
 * [pyinstaller](https://www.pyinstaller.org/)
 * [PIL](https://pillow.readthedocs.io/en/stable/index.html)
 
+
+More informations in `requirements.txt`. To create it I have used `python -m pip freeze > requirements.txt`. To install all Python packages written in the requirements.txt file run `pip install -r requirements.txt`.
+
 ## Build
 
 To build the .exe file and place it in **%USERPROFILE%\AppData\Local\Programs\Python\Python39\Scripts**
