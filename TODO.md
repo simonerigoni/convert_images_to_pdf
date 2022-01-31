@@ -4,7 +4,7 @@
 
 -  It would be nice to have a GUI (Tkinter?)
 
-## Todo
+## To Do
 
 
 ## In Progress
