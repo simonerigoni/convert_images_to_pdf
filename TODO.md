@@ -1,13 +1,19 @@
-# To do list 
+# Convert images to PDF
 
-## New ideas
+## Introduction
 
--  It would be nice to have a GUI (Tkinter?)
+Overview of the status of the tasks of this project.
 
-## To Do
+## Tasks
 
+### To do
 
-## In Progress
+- [ ] It would be nice to have a GUI (Tkinter?)
 
+### In Progress
 
-## Done ✓
+- [ ] None
+
+### Done ✓
+
+- [x] Things I have done
