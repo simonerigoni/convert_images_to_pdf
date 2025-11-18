@@ -41,4 +41,4 @@ In the [TODO.md](TODO.md) file you can find the list of tasks and on going activ
 
 ## Licensing and Acknowledgements
 
-Have a look at [LICENSE](LICENSE.md) and many thanks to [datatofish.com](https://datatofish.com/images-to-pdf-python/#:~:text=%20Steps%20to%20Convert%20Images%20to%20PDF%20using,the%20image%20to%20PDF%20using%20Python%20More%20) for the tips about how to convert images to PDF using python.
+Have a look at [LICENSE.md](LICENSE.md) and many thanks to [datatofish.com](https://datatofish.com/images-to-pdf-python/#:~:text=%20Steps%20to%20Convert%20Images%20to%20PDF%20using,the%20image%20to%20PDF%20using%20Python%20More%20) for the tips about how to convert images to PDF using python.
