@@ -6,7 +6,7 @@ Many times you have to create a PDF staring from a list of images. The idea is t
 
 ## Software and Libraries
 
-This project uses Python 3.10 and the following libraries:
+This project uses Python 3.11 and the following libraries:
 * [pyinstaller](https://www.pyinstaller.org/)
 * [PIL](https://pillow.readthedocs.io/en/stable/index.html)
 
@@ -38,10 +38,7 @@ To check the value of the environment variable %USERPROFILE% with Windows PowerS
 
 ## Running the code
 
-From any folder of your PC you can open a command promt and run `convert_images_to_pdf.exe image_1.jpeg image_2.jpeg` and in the same folder a **merge.pdf** file will be created
-
-You can find more information in this [blog post](https://simone-rigoni01.medium.com/easily-convert-images-to-pdf-with-python-540093f38988)
-
+From any folder of your PC you can open a command promt and run `convert_images_to_pdf.exe image_1.jpeg image_2.jpeg` and in the same folder a **merge.pdf** file will be created.
 
 ## List of activities
 
@@ -53,4 +50,4 @@ Have a look at [LICENSE.md](LICENSE.md) and many thanks to [datatofish.com](http
 
 ## Outro
 
-I hope this repository was interesting and thank you for taking the time to check it out. On my Medium you can find a more in depth [story](https://medium.com/@simone-rigoni01/) and on my Blogspot you can find the same [post](https://simonerigoni01.blogspot.com/) in italian. Let me know if you have any question and if you like the content that I create feel free to [buy me a coffee](https://www.buymeacoffee.com/simonerigoni).
+I hope this repository was interesting and thank you for taking the time to check it out. On my Medium you can find a more in depth [story](https://medium.com/@simone-rigoni01/easily-convert-images-to-pdf-with-python-540093f38988) and on my Blogspot you can find the same [post](https://simonerigoni01.blogspot.com/) in italian. Let me know if you have any question and if you like the content that I create feel free to [buy me a coffee](https://www.buymeacoffee.com/simonerigoni).
