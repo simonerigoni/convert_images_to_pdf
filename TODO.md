@@ -16,4 +16,5 @@ Overview of the status of the tasks of this project.
 
 ### Done ✓
 
-- [x] Things I have done
+- [x] Project initialization
+- [x] Use uv and pre-commit
