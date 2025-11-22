@@ -14,3 +14,9 @@ dev = [
     "pytest>=9.0.1",
     "ruff>=0.14.6",
 ]
+
+[tool.pyright]
+exclude = [".venv"]
+pythonVersion = "3.13"
+venvPath = "."
+venv = ".venv"
