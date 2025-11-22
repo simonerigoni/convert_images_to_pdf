@@ -31,7 +31,7 @@ No test implemented.
 
 ## Build
 
-To build the .exe file and place it in **%USERPROFILE%\AppData\Local\Programs\Python\Python39\Scripts**
+To build the .exe file and place it in **%USERPROFILE%\AppData\Local\Programs\Python\Python311\Scripts**
 you have to run `deploy.cmd`
 
 To check the value of the environment variable %USERPROFILE% with Windows PowerShell you have to run `$env:USERPROFILE` while on the command line you can simply run `echo %USERPROFILE%`
