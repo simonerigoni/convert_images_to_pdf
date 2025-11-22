@@ -11,16 +11,16 @@ import sys
 from PIL import Image
 
 
-OUTPUT_FILENAME = 'merge.pdf'
+OUTPUT_FILENAME = "merge.pdf"
 
 
-if __name__ == '__main__':
-    #print('Number of arguments:', len(sys.argv), 'arguments')
-    #print('Argument list:', str(sys.argv))
+if __name__ == "__main__":
+    # print('Number of arguments:', len(sys.argv), 'arguments')
+    # print('Argument list:', str(sys.argv))
 
-    images = sys.argv[1:] 
+    images = sys.argv[1:]
 
-    #print(images)
+    # print(images)
 
     pil_images = []
 
@@ -31,11 +31,15 @@ if __name__ == '__main__':
         convert_pil_images = []
 
         for pil_image in pil_images:
-            convert_pil_images.append(pil_image.convert('RGB'))
+            convert_pil_images.append(pil_image.convert("RGB"))
 
-        image_list = convert_pil_images[1:] 
+        image_list = convert_pil_images[1:]
 
-        convert_pil_images[0].save(OUTPUT_FILENAME, save_all = True, append_images = image_list)
+        convert_pil_images[0].save(
+            OUTPUT_FILENAME, save_all=True, append_images=image_list
+        )
 
     except Exception as e:
-        print('Error: {0}\nException message: {1}'.format(type(e).__name__, e))
+        print("Error: {0}\nException message: {1}".format(type(e).__name__, e))
+else:
+    pass
