@@ -6,12 +6,20 @@ Many times you have to create a PDF staring from a list of images. The idea is t
 
 ## Software and Libraries
 
-This project uses Python 3.9.5 and the following libraries:
+This project uses Python 3.10 and the following libraries:
 * [pyinstaller](https://www.pyinstaller.org/)
 * [PIL](https://pillow.readthedocs.io/en/stable/index.html)
 
+## Local configuration
 
-More informations in `requirements.txt`. To create it I have used `python -m pip freeze > requirements.txt`. To install all Python packages written in the requirements.txt file run `pip install -r requirements.txt`.
+To setup a new local enviroment and install all dependencies you can run `.\my_scripts\Set-Up.ps1`. It will install:
+* [Python](https://www.python.org/)
+* [uv](https://docs.astral.sh/uv/)
+* [Pre-commit](https://pre-commit.com/)
+
+Pre-commit is a framework for managing and maintaining multi-language pre-commit hooks. A pre-commit hook is a script that runs before a commit operation in a version control system. This allows to shift left code quality checks and remediations. You can change the hooks by updateing the file `.pre-commit-config.yaml`.
+
+To launch the pre-commit hooks without an actual commit you can run `pre-commit run`.
 
 ## Data
 
@@ -42,3 +50,7 @@ In the [TODO.md](TODO.md) file you can find the list of tasks and on going activ
 ## Licensing and Acknowledgements
 
 Have a look at [LICENSE.md](LICENSE.md) and many thanks to [datatofish.com](https://datatofish.com/images-to-pdf-python/#:~:text=%20Steps%20to%20Convert%20Images%20to%20PDF%20using,the%20image%20to%20PDF%20using%20Python%20More%20) for the tips about how to convert images to PDF using python.
+
+## Outro
+
+I hope this repository was interesting and thank you for taking the time to check it out. On my Medium you can find a more in depth [story](https://medium.com/@simone-rigoni01/) and on my Blogspot you can find the same [post](https://simonerigoni01.blogspot.com/) in italian. Let me know if you have any question and if you like the content that I create feel free to [buy me a coffee](https://www.buymeacoffee.com/simonerigoni).
