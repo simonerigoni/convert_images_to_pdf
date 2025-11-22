@@ -19,7 +19,7 @@ To setup a new local enviroment and install all dependencies you can run `.\my_s
 
 Pre-commit is a framework for managing and maintaining multi-language pre-commit hooks. A pre-commit hook is a script that runs before a commit operation in a version control system. This allows to shift left code quality checks and remediations. You can change the hooks by updateing the file `.pre-commit-config.yaml`.
 
-To trigger the pre-commit hooks without an actual commit you can run `pre-commit run --all-files`.
+To trigger the pre-commit hooks without an actual commit you can run `pre-commit run --all-files -v`.
 
 ## Data
 
