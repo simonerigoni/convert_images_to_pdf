@@ -40,6 +40,8 @@ To check the value of the environment variable %USERPROFILE% with Windows PowerS
 
 From any folder of your PC you can open a command promt and run `convert_images_to_pdf.exe image_1.jpeg image_2.jpeg` and in the same folder a **merge.pdf** file will be created.
 
+![Workflow](images/workflow.jpg)
+
 ## List of activities
 
 In the [TODO.md](TODO.md) file you can find the list of tasks and on going activities.
