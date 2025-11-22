@@ -1,14 +1,10 @@
 # Files, directories or patterns that should be excluded from Git tracking
 
-# General stuff
+# Temp stuff
+temp/
 
 # Python compiled files
 *.pyc
-
-# Actual project folders and files
-
-# Temp stuff
-temp/
 
 # Virtual enviroment
 .venv/
