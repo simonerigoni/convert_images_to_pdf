@@ -38,4 +38,7 @@ pip install pre-commit
 Write-Host "Install the pre-commit hooks..."
 pre-commit install
 
+Write-Host "Running uv sync..."
+uv sync
+
 Write-Host "Setup complete! Your Python project environment is ready. Please refresh your shell or restart for PATH updates." -ForegroundColor Green
