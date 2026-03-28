@@ -10,14 +10,14 @@ repos:
         args: [ --fix ]
       - id: ruff-format
   - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.407
+    rev: v1.1.408
     hooks:
       - id: pyright
   - repo: local
     hooks:
       - id: pytest
         name: pytest
-        entry: ./.venv/Scripts/pytest.exe
+        entry: ./.venv/Scripts/pytest.exe tests -v --durations=0 --cov --cov-report=markdown:COVERAGE.md
         language: python
         pass_filenames: false
         always_run: true

@@ -11,12 +11,17 @@ dependencies = [
 
 [dependency-groups]
 dev = [
-    "pytest>=9.0.1",
+    "pyright>=1.1.408",
+    "pytest-cov>=7.1.0",
     "ruff>=0.14.6",
 ]
 
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
 [tool.pyright]
 exclude = [".venv"]
-pythonVersion = "3.13"
+pythonVersion = "3.11"
 venvPath = "."
 venv = ".venv"

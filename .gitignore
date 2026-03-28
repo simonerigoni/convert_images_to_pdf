@@ -15,11 +15,10 @@ temp/
 # Ruff cache
 .ruff_cache/
 
-# uv stuff
-.python-version
-uv.lock
-
 # Ignore pyinstaller directories and configuration
 build/
 dist/
 convert_images_to_pdf.spec
+
+# pytest-cov stuff
+.coverage

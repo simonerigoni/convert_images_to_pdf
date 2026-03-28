@@ -35,9 +35,7 @@ if __name__ == "__main__":
 
         image_list = convert_pil_images[1:]
 
-        convert_pil_images[0].save(
-            OUTPUT_FILENAME, save_all=True, append_images=image_list
-        )
+        convert_pil_images[0].save(OUTPUT_FILENAME, save_all=True, append_images=image_list)
 
     except Exception as e:
         print("Error: {0}\nException message: {1}".format(type(e).__name__, e))
