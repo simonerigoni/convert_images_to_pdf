@@ -55,7 +55,43 @@ To check the value of the environment variable %USERPROFILE% with Windows PowerS
 
 ## Running the code
 
-From any folder of your PC you can open a command promt and run `convert_images_to_pdf.exe image_1.jpeg image_2.jpeg` and in the same folder a **merge.pdf** file will be created.
+### Command Line (unchanged behavior)
+
+From any folder of your PC you can open a command prompt and run:
+
+```cmd
+convert_images_to_pdf.exe image_1.jpeg image_2.jpeg image_3.jpeg
+```
+
+A `merge.pdf` file will be created in the same folder.
+
+You can also specify a custom output name:
+
+```cmd
+convert_images_to_pdf.exe -o report.pdf photo1.jpg photo2.png
+```
+
+Full help:
+
+```cmd
+convert_images_to_pdf.exe --help
+```
+
+### GUI (new in this version)
+
+Double-click the `convert_images_to_pdf.exe` (or run `python convert_images_to_pdf.py` with no arguments) to launch a simple Tkinter GUI.
+
+Features:
+- Add multiple images (common formats supported)
+- Reorder with **Move ↑ / ↓** buttons (order is critical for the resulting PDF)
+- Remove or clear the list
+- Choose a custom output filename/location
+- One-click conversion with friendly error messages
+- Optional "Open PDF" prompt after success (Windows)
+
+The same single executable supports **both modes**:
+- Run with image paths → classic CLI behavior (full console output)
+- Run with no arguments (double-click) → GUI (console is hidden on Windows after launch)
 
 ![Workflow](images/workflow.jpg)
 

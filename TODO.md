@@ -8,7 +8,7 @@ Overview of the status of the tasks of this project.
 
 ### To do
 
-- [ ] It would be nice to have a GUI (Tkinter?)
+- [ ] (done) GUI implemented with Tkinter (file selection, reordering, custom output, dual CLI/GUI exe)
 
 ### In Progress
 
