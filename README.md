@@ -55,7 +55,7 @@ To check the value of the environment variable %USERPROFILE% with Windows PowerS
 
 ## Running the code
 
-### Command Line (unchanged behavior)
+### Command Line
 
 From any folder of your PC you can open a command prompt and run:
 
@@ -77,7 +77,7 @@ Full help:
 convert_images_to_pdf.exe --help
 ```
 
-### GUI (new in this version)
+### GUI
 
 Double-click the `convert_images_to_pdf.exe` (or run `python convert_images_to_pdf.py` with no arguments) to launch a simple Tkinter GUI.
 
