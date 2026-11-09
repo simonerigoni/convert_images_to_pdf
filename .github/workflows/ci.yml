@@ -15,5 +15,4 @@ permissions:
 
 jobs:
   ci:
-    # TODO: switch to @v1 once simonerigoni/github is merged and tagged
-    uses: simonerigoni/github/.github/workflows/python-uv-ci.yml@42b86b6caf75d4eeddf1f40510bde1df4dc01ba7
+    uses: simonerigoni/github/.github/workflows/python-uv-ci.yml@v1
