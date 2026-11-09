@@ -29,8 +29,8 @@ uv run pyright .
 uv run pytest -v --durations=0 --cov --cov-report=markdown:COVERAGE.md
 ```
 
-- Ruff configuration lives in `pyproject.toml` (line-length = 100, target-version = "py311").
-- Pyright is configured for Python 3.11 against the `.venv`.
+- Ruff configuration lives in `pyproject.toml` (line-length = 100, target-version = "py314").
+- Pyright is configured for Python 3.14 against the `.venv`.
 - Pre-commit also enforces `uv lock --check` and runs the full pytest + coverage step (writes `COVERAGE.md`).
 - All pre-commit hooks are `repo: local` hooks that run through `uv run`, so they use the same tool versions as `uv.lock` and CI, on Windows and Linux alike.
 

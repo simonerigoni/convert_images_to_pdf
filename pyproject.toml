@@ -3,7 +3,7 @@ name = "convert-images-to-pdf"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.14"
 dependencies = [
     "pillow>=12.2.0",
     "pyinstaller>=6.16.0",
@@ -18,7 +18,7 @@ dev = [
 
 [tool.ruff]
 line-length = 100
-target-version = "py311"
+target-version = "py314"
 
 [tool.ruff.lint]
 # Keep ruff's pre-0.17 default rule set so lock file maintenance doesn't enable new lint rules
@@ -26,6 +26,6 @@ select = ["E4", "E7", "E9", "F"]
 
 [tool.pyright]
 exclude = [".venv"]
-pythonVersion = "3.11"
+pythonVersion = "3.14"
 venvPath = "."
 venv = ".venv"
