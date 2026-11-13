@@ -1,5 +1,7 @@
 # Convert images to PDF
 
+[![CI](https://github.com/simonerigoni/convert_images_to_pdf/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/simonerigoni/convert_images_to_pdf/actions/workflows/ci.yml?query=branch%3Amain) [![License](https://img.shields.io/github/license/simonerigoni/convert_images_to_pdf)](LICENSE.md) [![Python](https://img.shields.io/badge/python-3.14-blue)](pyproject.toml) [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit) [![Renovate](https://img.shields.io/badge/renovate-enabled-brightgreen?logo=renovatebot)](https://renovatebot.com)
+
 ## Introduction
 
 Many times you have to create a PDF staring from a list of images. The idea is to run an exe file from any folder on the PC that will take in input some images filename and it will create a PDF file. The order of the images in the PDF will be the same in which the images are passed to the exe. By default the output filename will be **merge.pdf**
