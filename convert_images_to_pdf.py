@@ -17,9 +17,9 @@ import ctypes
 import os
 import sys
 import tkinter as tk
+from collections.abc import Sequence
 from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
-from typing import Sequence
 
 from PIL import Image, UnidentifiedImageError
 
