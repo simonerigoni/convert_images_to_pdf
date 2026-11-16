@@ -9,11 +9,11 @@ This file contains conventions and instructions for AI coding assistants (Grok, 
 
 ## Environment & Package Management
 - **Always use `uv`** for Python environments, dependencies, and running tools. Do not use bare `pip` for project work.
-- Local first-time setup (Windows): run `.\my_scripts\Set-Up.ps1`.
+- Local first-time setup: run `uv sync`.
 - The virtual environment lives at `.venv/` (Windows: `.venv\Scripts\`, Linux/macOS: `.venv/bin/`).
 - Activate manually when needed: `.venv\Scripts\Activate.ps1` (PowerShell).
 - `uv sync` keeps the environment in sync with `pyproject.toml` + `uv.lock`.
-- Cleanup (when needed): `.\my_scripts\Clean-Up.ps1` deletes only the `.venv`.
+- Cleanup (when needed): delete the `.venv` folder.
 
 ## Quality & Tooling (Local)
 Run these before committing or asking for review:
@@ -29,8 +29,8 @@ uv run pyright .
 uv run pytest -v --durations=0 --cov --cov-report=markdown:COVERAGE.md
 ```
 
-- Ruff configuration lives in `pyproject.toml` (line-length = 100, target-version = "py314").
-- Pyright is configured for Python 3.14 against the `.venv`.
+- Ruff configuration lives in `pyproject.toml` (line-length = 100; target version is inferred from `requires-python`).
+- Pyright uses the project `.venv` and infers the Python version from it.
 - Pre-commit also enforces `uv lock --check` and runs the full pytest + coverage step (writes `COVERAGE.md`).
 - All pre-commit hooks are `repo: local` hooks that run through `uv run`, so they use the same tool versions as `uv.lock` and CI, on Windows and Linux alike.
 
@@ -68,7 +68,6 @@ uv run pytest -v --durations=0 --cov --cov-report=markdown:COVERAGE.md
 
 ## File & Directory Conventions
 - `convert_images_to_pdf.py` — single source of truth for the conversion logic.
-- `my_scripts/` — Windows PowerShell helpers (Set-Up, Clean-Up, Config). Source `Config.ps1` pattern is intentional.
 - `data/` — sample images and `DATA.md`.
 - `tests/` — pytest tests (expand here).
 - `.github/workflows/ci.yml` — CI definition (calls the shared workflow). Keep in sync with local pre-commit.
@@ -95,14 +94,14 @@ uv run pytest -v --durations=0 --cov --cov-report=markdown:COVERAGE.md
 ## Quick Reference Commands
 | Task                    | Command (PowerShell)                                      |
 |-------------------------|-----------------------------------------------------------|
-| First-time setup        | `.\my_scripts\Set-Up.ps1`                                 |
+| First-time setup        | `uv sync`                                                 |
 | Full quality check      | `pre-commit run --all-files -v`                           |
 | Lint + fix              | `uv run ruff check --fix .`                               |
 | Format                  | `uv run ruff format .`                                    |
 | Type check              | `uv run pyright .`                                        |
 | Tests + coverage        | `uv run pytest -v --cov --cov-report=markdown:COVERAGE.md`|
 | Build exe               | `deploy.cmd`                                              |
-| Clean environment       | `.\my_scripts\Clean-Up.ps1`                               |
+| Clean environment       | delete the `.venv` folder                                 |
 
 ---
 

@@ -3,6 +3,7 @@
 from pathlib import Path
 
 import pytest
+from PIL import UnidentifiedImageError
 
 from convert_images_to_pdf import convert_images_to_pdf
 
@@ -40,5 +41,5 @@ def test_convert_missing_file_raises(tmp_path: Path) -> None:
 def test_convert_invalid_image_raises(tmp_path: Path) -> None:
     bad = tmp_path / "not_an_image.txt"
     bad.write_text("this is not an image")
-    with pytest.raises(Exception):  # UnidentifiedImageError or subclass
+    with pytest.raises(UnidentifiedImageError):
         convert_images_to_pdf([bad], tmp_path / "out.pdf")
