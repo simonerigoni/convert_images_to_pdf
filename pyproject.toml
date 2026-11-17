@@ -14,7 +14,6 @@ dependencies = [
 
 
 [project.urls]
-Homepage = "https://github.com/simonerigoni/convert_images_to_pdf"
 Repository = "https://github.com/simonerigoni/convert_images_to_pdf"
 Medium = "https://medium.com/@simone-rigoni01/easily-convert-images-to-pdf-with-python-540093f38988"
 
