@@ -22,3 +22,4 @@ convert_images_to_pdf.spec
 
 # pytest-cov stuff
 .coverage
+COVERAGE.md
